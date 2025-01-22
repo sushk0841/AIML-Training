@@ -46,9 +46,11 @@
 # # https://smith.langchain.com/hub/hwchase17/react
 # prompt = hub.pull("hwchase17/react")
 
+import os
+ollama_base_url=os.getenv("OLLAMA_BASE_URL")
 # # Initialize a ChatOpenAI model
 # llm = OllamaLLM(
-#     model="llama3.2", temperature=0, base_url="https://alpaca-upright-vulture.ngrok-free.app/"
+#     model="llama3.2", temperature=0, base_url=OLLAMA_BASE_URL
 # )
 
 # # Create the ReAct agent using the create_react_agent function
